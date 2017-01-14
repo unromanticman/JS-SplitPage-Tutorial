@@ -13,8 +13,9 @@ var file = 5;
 var range = 5;
 </pre>
 ### Demo
-實際執行結果
- <img src="https://github.com/unromanticman/JS-SplitPage-Tutorial/blob/master/shot/demo01.png" width="350"/>  
+實際執行結果  
+
+<img src="https://github.com/unromanticman/JS-SplitPage-Tutorial/blob/master/shot/demo01.png" width="350"/>  
  
 <img src="https://github.com/unromanticman/JS-SplitPage-Tutorial/blob/master/shot/demo02.png" width="350"/>  
 
