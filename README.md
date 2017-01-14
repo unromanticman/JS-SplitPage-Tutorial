@@ -2,6 +2,7 @@
 用javascript達成網頁分頁的教學
 ### Intro
 只需要控制getSplitPage()函式內四個參數即可控制分頁的呈現
+
 <pre>
 //物品總數
 var count = 36;
@@ -21,4 +22,6 @@ var range = 5;
 
 <img src="https://github.com/unromanticman/JS-SplitPage-Tutorial/blob/master/shot/demo03.png" width="350"/>  
 
-
+### 思路  
+只需要透過資料庫取得物品總數即可  
+在每頁顯示物品上也只要透過limit來取就行
