@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JS分頁處理教學</title>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+</head>
+<body>
+
+<div id="splitPages">
+
+</div>
+
+</body>
+</html>
+
+<script type="text/javascript">
+    
+    function getSplitPage(){
+
+        //物品總數
+        var count = 36;
+        //當前頁面
+        var onpage = 7; 
+        //一個頁面顯示幾個物品
+        var file = 5;
+        //一個頁面顯示前後幾個頁面
+        var range = 5;
+
+        //取得總頁面
+        var page = Math.floor(count/file);
+        var over = count%file;
+        if(over>0){
+            page = page + 1;
+        }
+
+        var lastPage = page;
+        var before = "";
+        var after = "";
+
+        for(var i=1;i<=range;i++){
+            if((onpage+i)<=lastPage){
+                after = after +' '+(onpage+i);    
+            }
+            if((onpage-i)>0){
+                before  = (onpage-i)+' '+before ;
+            }
+        }
+
+        if(onpage<lastPage-range){
+            after = after+'...'+lastPage;
+        }
+        if(onpage>range+1){
+            before = '1'+'...'+before;
+        }        
+
+        $( "#splitPages" ).append( '當前頁面'+onpage+'<br>'+'總物件量'+count+'<br>'+'一頁面顯示多少物件作為切割:'+file+'<br>'+'總頁數:'+page+'<br>'+'前後個顯示幾個頁面:'+range+'<br><br>');
+        
+        $( "#splitPages" ).append( before +' ['+ onpage +'] '+after );
+    }
+
+    $( document ).ready(function() {
+        console.log( "ready!" );
+        getSplitPage();
+    });
+
+
+</script>
