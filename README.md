@@ -23,5 +23,5 @@ var range = 5;
 <img src="https://github.com/unromanticman/JS-SplitPage-Tutorial/blob/master/shot/demo03.png" width="350"/>  
 
 ### 思路  
-只需要透過資料庫取得物品總數即可  
-在每頁顯示物品上也只要透過limit來取就行
+只需要透過資料庫取得物品總數即可達成分頁  
+此外每頁的物品呈現也只要透過limit來取即可
