@@ -1,7 +1,8 @@
 # JS-SplitPage-Tutorial
 用javascript達成網頁分頁的教學
 ### Intro
-只需要控制getSplitPage()函式內四個參數即可控制分頁的呈現
+控制getSplitPage()函式內四個參數即可控制分頁的呈現  
+後端僅需 SELECT COUNT(*) FROM page 並更新 count 變數即可
 
 <pre>
 //物品總數
